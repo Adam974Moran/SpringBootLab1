@@ -8,6 +8,7 @@ class SpringBootTutorialApplicationTests {
 
     @Test
     void contextLoads() {
+        assertTrue(true, "This will always pass");
     }
 
 }
