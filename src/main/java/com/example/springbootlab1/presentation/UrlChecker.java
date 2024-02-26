@@ -1,11 +1,11 @@
 package com.example.springbootlab1.presentation;
 
 import com.example.springbootlab1.business.WrongFormatException;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Objects;
 
 public class UrlChecker {
+    private UrlChecker(){}
     public static String checkUrl(String lat, String lng, String date, String formatted) throws WrongFormatException{
         if(Objects.equals(lat, "null") || Objects.equals(lng, "null")){
             throw new WrongFormatException("Wrong format! Variables \"lat\" and \"lng\" are obligatory!");
